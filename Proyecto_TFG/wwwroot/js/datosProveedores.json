@@ -1,0 +1,42 @@
+[
+  {
+    "proveedor_id": "67890",
+    "nombre_razon_social": "ElectroSupply Inc.",
+    "nif_cif": "A12345678",
+    "direccion": {
+      "calle": "Calle del Proveedor 123",
+      "ciudad": "CiudadEjemplo",
+      "pais": "PaísEjemplo",
+      "codigo_postal": "12345"
+    },
+    "telefono": "+1-800-123-4567",
+    "correo_electronico": "ventas@electrosupply.com",
+    "pagina_web": "https://www.electrosupply.com",
+    "contacto_principal": {
+      "nombre": "Juan Pérez",
+      "cargo": "Director de ventas",
+      "telefono": "+1-800-765-4321",
+      "correo_electronico": "juan.perez@electrosupply.com"
+    }
+  },
+  {
+    "proveedor_id": "56788",
+    "nombre_razon_social": "ElectroCompany Inc.",
+    "nif_cif": "B87654321",
+    "direccion": {
+      "calle": "Calle del Proveedor 567",
+      "ciudad": "CiudadEjemplo2",
+      "pais": "PaísEjemplo2",
+      "codigo_postal": "67890"
+    },
+    "telefono": "+34678098234",
+    "correo_electronico": "ventas@electrocompany.com",
+    "pagina_web": "https://www.electrocompany.com",
+    "contacto_principal": {
+      "cargo": "Director de ventas",
+      "correo_electronico": "diego.martin@electrocompany.com",
+      "nombre": "Diego Martin",
+      "telefono": "+1-800-795-5221"
+    }
+  }
+]

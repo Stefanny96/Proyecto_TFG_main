@@ -1,0 +1,41 @@
+{
+  "producto_id": "12345",
+  "nombre": "Auriculares Bluetooth",
+  "descripcion": "Auriculares inalámbricos con cancelación de ruido y batería de larga duración.",
+  "codigo": "ABT-2024",
+  "categoria": "Tecnología",
+  "marca": "SoundTech",
+  "modelo": "X-200",
+  "precio_unitario": 99.99,
+  "precio_con_impuesto": 119.99,
+  "moneda": "EUR",
+  "unidades_disponibles": 150,
+  "stock_minimo": 10,
+  "stock_maximo": 500,
+  "imagen": "https://www.ejemplo.com/imagenes/auriculares.jpg",
+  "peso": "0.3 kg",
+  "dimensiones": {
+    "alto": "20 cm",
+    "ancho": "15 cm",
+    "profundidad": "5 cm"
+  },
+  "color": "Negro",
+  "material": "Plástico y cuero sintético",
+  "fecha_lanzamiento": "2024-01-15",
+  "plazo_entrega": "3-5 días hábiles",
+  "metodo_envio": "Standard, Expreso",
+  "costo_envio": 5.00,
+  "proveedor": {
+    "nombre": "ElectroSupply Inc.",
+    "contacto": "ventas@electrosupply.com",
+    "telefono": "+1-800-123-4567",
+    "direccion": "1234 Calle del Proveedor, Ciudad, País"
+  },
+  "garantia": {
+    "periodo": "2 años",
+    "cobertura": "Defectos de fabricación"
+  },
+  "certificaciones": [ "CE", "FCC", "RoHS" ],
+  "estado": "Nuevo",
+  "disponibilidad": "Disponible"
+}
