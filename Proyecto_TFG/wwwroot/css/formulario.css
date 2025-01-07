@@ -1,0 +1,382 @@
+/* General */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrar título del formulario */
+h1 {
+    color: #1e3a8a; /* Azul oscuro */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Encabezados de secciones */
+h5 {
+    color: #2563eb; /* Azul intermedio */
+    font-weight: bold;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para etiquetas de campos */
+label {
+    font-weight: bold;
+    color: #1e3a8a; /* Azul oscuro */
+}
+
+/* Estilos para inputs */
+.form-control {
+    border: 1px solid #b0c4de;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+    .form-control:focus {
+        border-color: #2563eb;
+        box-shadow: 0px 0px 5px rgba(37, 99, 235, 0.5);
+    }
+
+/* Símbolo de euro */
+.input-precio {
+    position: relative;
+}
+
+    .input-precio input {
+        padding-right: 30px;
+    }
+
+.simbolo-euro {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2563eb; /* Azul intermedio */
+    font-weight: bold;
+}
+
+/* Agrega el símbolo de "€" después de los campos de precio y subtotal */
+.input-euro::after {
+    content: "€";
+    position: absolute;
+    right: 10px;
+    color: #2563eb; /* Color azul para el símbolo */
+    font-weight: bold;
+}
+
+.input-euro {
+    position: relative;
+    padding-right: 20px; /* Espacio para el símbolo de € */
+}
+
+
+/* Estilo de los botones */
+button {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+    button.btn-primary {
+        background-color: #2563eb;
+        color: white;
+        border: none;
+    }
+
+        button.btn-primary:hover {
+            background-color: #1e3a8a;
+            transform: translateY(-2px);
+        }
+
+    button.btn-success {
+        background-color: #4bb543; /* Verde para indicar envío */
+        color: white;
+        border: none;
+    }
+
+        button.btn-success:hover {
+            background-color: #3a9d33;
+            transform: translateY(-2px);
+        }
+
+/* Estilo del botón "Eliminar" */
+.btnEliminarProducto {
+    background-color: #e63946; /* Rojo */
+    color: white; /* Texto en blanco */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 15px; /* Ajusta el tamaño del botón */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto al pasar el mouse */
+}
+
+    /* Hover del botón "Eliminar" */
+    .btnEliminarProducto:hover {
+        background-color: #d62839; /* Rojo más oscuro al pasar el mouse */
+        transform: translateY(-2px); /* Efecto de movimiento */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    }
+
+    /* Botón en foco */
+    .btnEliminarProducto:focus {
+        outline: none; /* Elimina el borde por defecto del navegador */
+        box-shadow: 0px 0px 5px rgba(230, 57, 70, 0.5); /* Sombra adicional */
+    }
+
+
+
+/* Estilo de los contenedores de secciones */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaciado entre secciones */
+.row + .row {
+    margin-top: 20px;
+}
+
+/* Estilos para el número y fecha de solicitud */
+.form-group {
+    margin-bottom: 15px;
+}
+
+#numeroSolicitud, #fechaSolicitud {
+    text-align: center; /* Centra el texto en los campos */
+    font-weight: bold;
+    color: #1e3a8a; /* Azul oscuro */
+    background-color: #e8f0fe; /* Fondo azul claro */
+}
+
+#numeroSolicitud {
+    border: 1px solid #4f84e5;
+}
+
+#fechaSolicitud {
+    border: 1px solid #4f84e5;
+}
+
+/* Estilos del label */
+label {
+    font-weight: bold;
+    color: #2563eb; /* Azul intermedio */
+    margin-bottom: 5px;
+}
+
+/* Centrar los labels de los campos de Número y Fecha de Solicitud */
+.form-group label {
+    font-weight: bold;
+    color: #2563eb; /* Azul oscuro */
+    text-align: center; /* Centra el texto del label */
+    display: block; /* Asegura que el label ocupe toda la línea */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    margin-bottom: 5px;
+}
+
+/* Asegura que los campos de Número de Solicitud y Fecha de Solicitud estén alineados con los labels */
+#numeroSolicitud, #fechaSolicitud {
+    text-align: center; /* Centra el texto en los campos */
+    font-weight: bold;
+    color: #1e3a8a; /* Azul oscuro */
+    border-radius: 5px; /* Bordes redondeados para los inputs */
+}
+
+#numeroSolicitud {
+    border: 1px solid #4f84e5;
+}
+
+#fechaSolicitud {
+    border: 1px solid #4f84e5;
+}
+
+/* Para campos con readonly, mantén el fondo azul claro */
+input[readonly] {
+    background-color: #e8f0fe; /* Fondo azul claro */
+}
+
+/* Asegura que los campos con readonly no cambien de fondo al recibir foco */
+input[readonly]:focus {
+    background-color: #e8f0fe; /* Mantén el fondo igual en el foco */
+    border-color: #2563eb; /* Cambiar solo el borde */
+    box-shadow: 0px 0px 5px rgba(37, 99, 235, 0.5); /* Efecto de sombra */
+}
+
+/* Estilo para el select2 */
+/* Ocultar la flecha de Select2 */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    display: none !important;
+}
+
+.select2-container--default .select2-selection--single {
+    height: 40px !important;
+    border-radius: 5px !important;
+    border: 1px solid #b0c4de !important;
+    background-color: white !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+}
+
+/* Modificar el color de texto y estilo de bordes cuando el campo tiene foco */
+.select2-container--default .select2-selection--single:focus {
+    border-color: #2563eb; /* Color de borde al enfocarse */
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.5); /* Sombra azul */
+}
+
+/* Estilo para el texto placeholder */
+.select2-selection__placeholder {
+    color: #6c757d; /* Color de texto gris */
+}
+
+/* Estilo cuando el select2 se encuentra con una opción seleccionada */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #1e3a8a; /* Azul oscuro, como en los inputs */
+}
+
+/* Redondear las esquinas del cuadro desplegable */
+.select2-dropdown {
+    border-radius: 10px !important; /* Bordes redondeados */
+    background-color: #f1f7fc; /* Fondo claro */
+    border: 1px solid #b0c4de; /* Bordes similares al de los inputs */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-height: 300px !important; /* Ajusta la altura máxima aquí */
+    overflow: hidden !important; /* Elimina el overflow en el contenedor principal */
+}
+
+/* Limitar la altura del desplegable para que no se vea tan largo */
+.select2-dropdown .select2-results {
+    max-height: 155px !important; /* Ajusta la altura máxima del contenedor de resultados */
+}
+
+/* Opcional: Redondear las esquinas de las opciones del dropdown */
+.select2-results__option {
+    border-radius: 5px; /* Bordes redondeados en las opciones */
+}
+
+/* Estilo para las opciones al hacer hover */
+.select2-results__option--highlighted {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* DISEÑO DIV PROVEEDORES Y TABLA */
+
+/* Personalización de la barra de desplazamiento */
+#divInformacionProveedor .table tbody td::-webkit-scrollbar {
+    height: 8px!important; /* Altura de la barra horizontal */
+    width: 8px!important; /* Ancho de la barra vertical (si existiera) */
+    background-color: #f5f5f5!important; /* Fondo de la barra */
+}
+
+#divInformacionProveedor .table tbody td::-webkit-scrollbar-thumb {
+    background-color: #1e3a8a!important; /* Color de la barra de desplazamiento */
+    border-radius: 4px !important; /* Bordes redondeados */
+}
+
+#divInformacionProveedor .table tbody td::-webkit-scrollbar-thumb:hover {
+    background-color: #1565c0 !important; /* Color al pasar el mouse por la barra */
+}
+
+/* Ajustes de tipografía */
+#divInformacionProveedor {
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold;
+    width: 100%; /* Ancho relativo al contenedor padre */
+    max-width: 600px; /* Ancho máximo para el div */
+    overflow: hidden; /* Ocultar desbordamiento externo */
+    margin: 0 auto; /* Centrar horizontalmente si es necesario */
+}
+
+/* Tabla */
+#divInformacionProveedor .table {
+    margin: 0; /* Elimina el margen de la tabla */
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
+    width: 100%; /* Asegura que la tabla ocupe el mismo ancho que el contenedor */
+    table-layout: fixed; /* Fuerza el ajuste de las celdas */
+
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evitar que el contenido salga de los bordes */
+}
+
+/* Encabezado de la tabla */
+#divInformacionProveedor .table thead th {
+background-color: #e8f0fe; /* Fondo azul */
+    color: #1e3a8a; /* Texto azul */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Texto centrado */
+    white-space: nowrap; /* Evita saltos de línea */
+    overflow: hidden; /* Evita que el contenido salga de los bordes */
+    text-overflow: ellipsis; /* Indica contenido desbordado con puntos suspensivos */
+}
+
+/* Celdas de la tabla */
+#divInformacionProveedor .table tbody td {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Bordes de las celdas */
+    text-align: center; /* Texto centrado */
+    overflow: auto; /* Activa el desplazamiento si es necesario */
+    white-space: nowrap; /* Evita saltos de línea */
+}
+
+/* Resaltar las filas al pasar el mouse */
+#divInformacionProveedor .table tbody tr:hover {
+    background-color: #f1f1f1; /* Fondo gris claro */
+}
+
+/* Estilo para barras de desplazamiento */
+#divInformacionProveedor .table tbody td::-webkit-scrollbar {
+    height: 8px; /* Altura de la barra */
+}
+
+#divInformacionProveedor .table tbody td::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la barra */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+#divInformacionProveedor .table tbody td::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color al pasar el mouse */
+}
+
+/* Estilos tabla en productos */
+
+#tablaPedido {
+    border-collapse: collapse; /* Asegura que las líneas de borde no se dupliquen */ 
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+} 
+
+#tablaPedido th, 
+#tablaPedido td {
+    border: 1px solid #ddd; /* Añade un borde a cada celda */ 
+    padding: 10px; /* Añade un margen interno a cada celda */ 
+    text-align: center !important; /* Alinea el texto al centro */
+} 
+
+#tablaPedido th { 
+    background-color: #f2f2f2; /* Añade un color de fondo para las cabeceras */ 
+}
+
+#tablaPedido th + th, 
+#tablaPedido td + td { 
+    border-left: 2px solid #ddd; /* Añade un borde izquierdo más grueso entre las celdas */
+}
+
+/* Asegurar que el contenido del tbody también esté centrado */
+#tablaPedido tbody td {
+    text-align: center !important; /* Alinea el texto al centro dentro del tbody */
+}
+
+/* Centrar los placeholders de los inputs */ 
+#tablaPedido input::placeholder { 
+    text-align: center; 
+}
+
+#tablaPedido input { 
+    text-align: center; 
+}

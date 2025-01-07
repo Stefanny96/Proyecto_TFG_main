@@ -1,0 +1,138 @@
+﻿@page
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Pedido</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="~/css/formulario.css" asp-append-version="true"> <!-- Pongo "asp-append-version="true" Esto ayuda a evitar problemas de caché.-->
+    <script src="~/js/jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="~/js/formulario.js" asp-append-version="true"></script>
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="mb-4">Solicitud de Pedido</h1>
+
+        <!-- Número y Fecha de Solicitud -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="numeroSolicitud">Número de Solicitud</label>
+                    <input type="text" id="numeroSolicitud" class="form-control" readonly />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fechaSolicitud">Fecha de Solicitud</label>
+                    <input type="text" id="fechaSolicitud" class="form-control" readonly />
+                </div>
+            </div>
+        </div>
+
+        <!-- Información del solicitante y del proveedor -->
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h5>Información del Solicitante</h5>
+                <label>Nombre</label>
+                <input type="text" class="form-control" id="txtNombreSolicitante" placeholder="Nombre" readonly>
+                <label class="mt-2">NIF/CIF</label>
+                <input type="text" class="form-control" id="txtNifSolicitante" placeholder="NIF/CIF" readonly>
+                <label class="mt-2">Email</label>
+                <input type="text" class="form-control" id="txtEmailSolicitante" placeholder="Email" value="prueba@gmail.com" readonly>
+            </div>
+            <div class="col-md-6 mb-3" id="contenedorProveedores">
+                <h5>Información del Proveedor</h5>
+                <label>Proveedor</label>
+                <select class="form-control select2" id="selectProveedor" style="width: 100%;">
+                    <option value="" disabled selected>Buscar proveedor...</option>
+                </select>
+                <!-- Contenedor para mostrar la información del proveedor -->
+                <div class="col-md-6 mb-3" id="divInformacionProveedor"></div>
+            </div>
+        </div>
+
+        <!-- Datos de Entrega -->
+        <div class="row my-4">
+            <h5>Datos de Entrega</h5>
+            <div class="col-md-6 mb-3">
+                <label>Dirección de Entrega</label>
+                <input type="text" class="form-control" placeholder="Dirección de Entrega">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Código Postal</label>
+                <input type="text" class="form-control" placeholder="Código Postal">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Provincia</label>
+                <input type="text" class="form-control" placeholder="Provincia">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Municipio</label>
+                <input type="text" class="form-control" placeholder="Municipio">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>País</label>
+                <input type="text" class="form-control" placeholder="País">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Número de Teléfono</label>
+                <input type="tel" class="form-control" placeholder="Número de Teléfono">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Fecha Prevista de Entrega</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="mt-2" for="metodoPago">Método de Pago</label>
+                <select class="form-control" id="metodoPago" name="metodoPago">
+                    <option value="" disabled selected>Selecciona un método de pago</option>
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="contra-reembolso">Contra Reembolso</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Detalles del Pedido -->
+        <h5 class="my-4">Detalles del Pedido</h5>
+        <table class="table" id="tablaPedido">
+            <thead id="cabeceraPedido">
+                <tr>
+                    <th>Código producto</th>
+                    <th>Descripción producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio unitario</th>
+                    <th>Subtotal</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="detallePedido">
+                
+            </tbody>
+        </table>
+
+        <!-- Botón para agregar linea -->
+        <button type="button" class="btn btn-primary mt-3 me-3" onclick="agregarLinea()">Agregar Línea</button>
+
+        <!-- Total del pedido -->
+        <div class="mt-3">
+            <label for="totalPedido">Total Pedido:</label>
+            <div class="input-precio">
+                <input type="number" id="totalPedido" class="form-control" readonly />
+                <span class="simbolo-euro">€</span>
+            </div>
+        </div>
+
+        <!-- Botón para enviar solicitud -->
+        <button type="button" class="btn btn-success mt-3">Enviar Solicitud</button>
+    </div>
+</body>
+
+</html>

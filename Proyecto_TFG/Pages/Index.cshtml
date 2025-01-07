@@ -1,0 +1,54 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Formas geométricas -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+
+    <!-- Tarjeta de login centrada -->
+    <div class="login-card">
+        <h2>Iniciar Sesión</h2>
+        <p class="text-muted mb-4">Bienvenido de nuevo, por favor ingresa tus datos</p>
+
+        <!-- Mostrar mensaje de error si las credenciales son incorrectas.
+            Mensaje de error: Si el login falla, el error se mostrará en la misma página, 
+            usando la propiedad ErrorMessage del modelo (Model.ErrorMessage).
+        -->
+        @if (!String.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <p style="color: red;">@Model.ErrorMessage</p>
+        }
+
+        <!-- Formulario de login -->
+       @*  asp-for="Usuario" y asp-for="Contrasena": Estos atributos vinculan los campos del formulario con las propiedades del modelo en el 
+        archivo Index.cshtml.cs, lo que permite que los datos se reciban automáticamente en el servidor cuando el formulario se envía. *@
+        <form method="post">
+            <div class="mb-3">
+                <label for="Usuario" class="form-label fw-bold">Usuario</label>
+                <input type="text" class="form-control" id="Usuario" name="Usuario" asp-for="Usuario" placeholder="Ingresa tu usuario" required>
+            </div>
+            <div class="mb-3">
+                <label for="Contrasena" class="form-label fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="Contrasena" name="Contrasena" asp-for="Contrasena" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>

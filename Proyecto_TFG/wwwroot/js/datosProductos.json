@@ -1,0 +1,387 @@
+[
+    {
+        "producto_id": "12345",
+        "nombre": "Smartphone XYZ",
+        "descripcion": "Smartphone de alta gama con cámara de 108MP y procesador Snapdragon.",
+        "codigo": "SPX-2024",
+        "categoria": "Tecnología",
+        "marca": "TechBrand",
+        "modelo": "ProMax 5000",
+        "precio_unitario": 899.99,
+        "precio_con_impuesto": 1089.99,
+        "moneda": "EUR",
+        "unidades_disponibles": 500,
+        "stock_minimo": 50,
+        "stock_maximo": 1000,
+        "imagen": "https://www.ejemplo.com/imagenes/smartphone_xyz.jpg",
+        "peso": "0.3 kg",
+        "dimensiones": {
+            "alto": "15.5 cm",
+            "ancho": "7.5 cm",
+            "profundidad": "0.9 cm"
+        },
+        "color": "Negro",
+        "material": "Aluminio y vidrio",
+        "fecha_lanzamiento": "2024-11-01",
+        "plazo_entrega": "5-7 días hábiles",
+        "metodo_envio": "Standard, Expreso",
+        "costo_envio": 4.99,
+        "proveedor": {
+            "proveedor_id": "67890",
+            "nombre_razon_social": "ElectroSupply Inc.",
+            "nif_cif": "A12345678",
+            "direccion": {
+                "calle": "Calle del Proveedor 123",
+                "ciudad": "CiudadEjemplo",
+                "pais": "PaísEjemplo",
+                "codigo_postal": "12345"
+            },
+            "telefono": "+1-800-123-4567",
+            "correo_electronico": "ventas@electrosupply.com",
+            "pagina_web": "https://www.electrosupply.com",
+            "contacto_principal": {
+                "nombre": "Juan Pérez",
+                "cargo": "Director de ventas",
+                "telefono": "+1-800-765-4321",
+                "correo_electronico": "juan.perez@electrosupply.com"
+            }
+        },
+        "garantia": {
+            "periodo": "2 años",
+            "cobertura": "Defectos de fabricación"
+        },
+        "certificaciones": [ "CE", "RoHS" ],
+        "estado": "Nuevo",
+        "disponibilidad": "Disponible"
+    },
+    {
+        "producto_id": "67891",
+        "nombre": "Laptop UltraSlim",
+        "descripcion": "Laptop ultradelgada con pantalla 4K y procesador Intel i7.",
+        "codigo": "LUS-2024",
+        "categoria": "Tecnología",
+        "marca": "CompuMax",
+        "modelo": "MaxBook Pro",
+        "precio_unitario": 1299.99,
+        "precio_con_impuesto": 1579.99,
+        "moneda": "EUR",
+        "unidades_disponibles": 300,
+        "stock_minimo": 30,
+        "stock_maximo": 600,
+        "imagen": "https://www.ejemplo.com/imagenes/laptop_ultraslim.jpg",
+        "peso": "1.5 kg",
+        "dimensiones": {
+            "alto": "2.2 cm",
+            "ancho": "30.4 cm",
+            "profundidad": "20.6 cm"
+        },
+        "color": "Plata",
+        "material": "Aluminio",
+        "fecha_lanzamiento": "2024-10-15",
+        "plazo_entrega": "7-10 días hábiles",
+        "metodo_envio": "Standard, Expreso",
+        "costo_envio": 5.99,
+        "proveedor": {
+            "proveedor_id": "56788",
+            "nombre_razon_social": "ElectroCompany Inc.",
+            "nif_cif": "B87654321",
+            "direccion": {
+                "calle": "Calle del Proveedor 567",
+                "ciudad": "CiudadEjemplo2",
+                "pais": "PaísEjemplo2",
+                "codigo_postal": "67890"
+            },
+            "telefono": "+34678098234",
+            "correo_electronico": "ventas@electrocompany.com",
+            "pagina_web": "https://www.electrocompany.com",
+            "contacto_principal": {
+                "nombre": "Diego Martin",
+                "cargo": "Director de ventas",
+                "telefono": "+1-800-795-5221",
+                "correo_electronico": "diego.martin@electrocompany.com"
+            }
+        },
+        "garantia": {
+            "periodo": "1 año",
+            "cobertura": "Defectos de fabricación"
+        },
+        "certificaciones": [ "CE", "RoHS" ],
+        "estado": "Nuevo",
+        "disponibilidad": "Disponible"
+    },
+    {
+        "producto_id": "93456",
+        "nombre": "Monitor Curvo 4K",
+        "descripcion": "Monitor curvo de 27 pulgadas con resolución 4K y tasa de refresco de 144Hz.",
+        "codigo": "MC-2024",
+        "categoria": "Tecnología",
+        "marca": "VisionTech",
+        "modelo": "UltraScreen 4K",
+        "precio_unitario": 499.99,
+        "precio_con_impuesto": 599.99,
+        "moneda": "EUR",
+        "unidades_disponibles": 100,
+        "stock_minimo": 10,
+        "stock_maximo": 200,
+        "imagen": "https://www.ejemplo.com/imagenes/monitor_curvo_4k.jpg",
+        "peso": "6.2 kg",
+        "dimensiones": {
+            "alto": "35 cm",
+            "ancho": "61 cm",
+            "profundidad": "8 cm"
+        },
+        "color": "Negro",
+        "material": "Plástico y vidrio templado",
+        "fecha_lanzamiento": "2024-09-20",
+        "plazo_entrega": "5-7 días hábiles",
+        "metodo_envio": "Standard, Expreso",
+        "costo_envio": 6.50,
+        "proveedor": {
+            "proveedor_id": "98432",
+            "nombre_razon_social": "TechNova Solutions",
+            "nif_cif": "A45678901",
+            "direccion": {
+                "calle": "Avenida Innovación 42",
+                "ciudad": "CiudadFutura",
+                "pais": "PaísTech",
+                "codigo_postal": "54321"
+            },
+            "telefono": "+34987654321",
+            "correo_electronico": "contacto@technova.com",
+            "pagina_web": "https://www.technova.com",
+            "contacto_principal": {
+                "nombre": "Luis Rojas",
+                "cargo": "Gerente de Proyectos",
+                "telefono": "+44-20-1234-5678",
+                "correo_electronico": "luis.rojas@technova.com"
+            }
+        },
+        "garantia": {
+            "periodo": "2 años",
+            "cobertura": "Defectos de fabricación"
+        },
+        "certificaciones": [ "CE", "RoHS" ],
+        "estado": "Nuevo",
+        "disponibilidad": "Disponible"
+    },
+    {
+        "producto_id": "74561",
+        "nombre": "Cargador Solar Portátil",
+        "descripcion": "Cargador solar portátil con panel de 10W, ideal para dispositivos móviles.",
+        "codigo": "CS-2024",
+        "categoria": "Tecnología",
+        "marca": "PowerSolar",
+        "modelo": "SolarCharge 10W",
+        "precio_unitario": 39.99,
+        "precio_con_impuesto": 48.39,
+        "moneda": "EUR",
+        "unidades_disponibles": 200,
+        "stock_minimo": 20,
+        "stock_maximo": 500,
+        "imagen": "https://www.ejemplo.com/imagenes/cargador_solar_portatil.jpg",
+        "peso": "0.5 kg",
+        "dimensiones": {
+            "alto": "2 cm",
+            "ancho": "10 cm",
+            "profundidad": "5 cm"
+        },
+        "color": "Verde",
+        "material": "Plástico reciclado",
+        "fecha_lanzamiento": "2024-10-15",
+        "plazo_entrega": "3-5 días hábiles",
+        "metodo_envio": "Standard, Expreso",
+        "costo_envio": 4.50,
+        "proveedor": {
+            "proveedor_id": "67890",
+            "nombre_razon_social": "ElectroSupply Inc.",
+            "nif_cif": "A12345678",
+            "direccion": {
+                "calle": "Calle del Proveedor 123",
+                "ciudad": "CiudadEjemplo",
+                "pais": "PaísEjemplo",
+                "codigo_postal": "12345"
+            },
+            "telefono": "+1-800-123-4567",
+            "correo_electronico": "ventas@electrosupply.com",
+            "pagina_web": "https://www.electrosupply.com",
+            "contacto_principal": {
+                "nombre": "Juan Pérez",
+                "cargo": "Director de ventas",
+                "telefono": "+1-800-765-4321",
+                "correo_electronico": "juan.perez@electrosupply.com"
+            }
+        },
+        "garantia": {
+            "periodo": "1 año",
+            "cobertura": "Defectos de fabricación"
+        },
+        "certificaciones": [ "CE", "RoHS" ],
+        "estado": "Nuevo",
+        "disponibilidad": "Disponible"
+    },
+    {
+        "producto_id": "82374",
+        "nombre": "Teclado Mecánico RGB",
+        "descripcion": "Teclado mecánico con retroiluminación RGB y teclas programables.",
+        "codigo": "TM-2024",
+        "categoria": "Accesorios",
+        "marca": "HyperKeys",
+        "modelo": "Xtreme RGB",
+        "precio_unitario": 129.99,
+        "precio_con_impuesto": 157.79,
+        "moneda": "EUR",
+        "unidades_disponibles": 150,
+        "stock_minimo": 15,
+        "stock_maximo": 300,
+        "imagen": "https://www.ejemplo.com/imagenes/teclado_mecanico_rgb.jpg",
+        "peso": "1.2 kg",
+        "dimensiones": {
+            "alto": "4 cm",
+            "ancho": "45 cm",
+            "profundidad": "18 cm"
+        },
+        "color": "Negro",
+        "material": "Plástico y aluminio",
+        "fecha_lanzamiento": "2024-11-01",
+        "plazo_entrega": "4-6 días hábiles",
+        "metodo_envio": "Standard, Expreso",
+        "costo_envio": 7.00,
+        "proveedor": {
+            "proveedor_id": "76123",
+            "nombre_razon_social": "GreenTech Supplies",
+            "nif_cif": "B12345678",
+            "direccion": {
+                "calle": "Calle Verde 23",
+                "ciudad": "EcoCity",
+                "pais": "GreenLand",
+                "codigo_postal": "11223"
+            },
+            "telefono": "+34911223344",
+            "correo_electronico": "info@greentechsupplies.com",
+            "pagina_web": "https://www.greentechsupplies.com",
+            "contacto_principal": {
+                "nombre": "María García",
+                "cargo": "Director Ejecutivo",
+                "telefono": "+34-91-123-4567",
+                "correo_electronico": "maria.garcia@greentechsupplies.com"
+            }
+        },
+        "garantia": {
+            "periodo": "2 años",
+            "cobertura": "Defectos de fabricación"
+        },
+        "certificaciones": [ "CE", "RoHS" ],
+        "estado": "Nuevo",
+        "disponibilidad": "Disponible"
+    },
+    {
+        "producto_id": "21468",
+        "nombre": "Auriculares In-Ear Bluetooth",
+        "descripcion": "Auriculares inalámbricos con tecnología Bluetooth 5.0 y cancelación de ruido.",
+        "codigo": "AI-2024",
+        "categoria": "Accesorios",
+        "marca": "SoundMax",
+        "modelo": "ClearSound",
+        "precio_unitario": 79.99,
+        "precio_con_impuesto": 95.99,
+        "moneda": "EUR",
+        "unidades_disponibles": 500,
+        "stock_minimo": 50,
+        "stock_maximo": 1000,
+        "imagen": "https://www.ejemplo.com/imagenes/auriculares_bluetooth.jpg",
+        "peso": "0.3 kg",
+        "dimensiones": {
+            "alto": "2 cm",
+            "ancho": "7 cm",
+            "profundidad": "7 cm"
+        },
+        "color": "Blanco",
+        "material": "Plástico y silicona",
+        "fecha_lanzamiento": "2024-08-25",
+        "plazo_entrega": "3-5 días hábiles",
+        "metodo_envio": "Standard, Expreso",
+        "costo_envio": 5.00,
+        "proveedor": {
+            "proveedor_id": "34912",
+            "nombre_razon_social": "FoodCo Global",
+            "nif_cif": "C98765432",
+            "direccion": {
+                "calle": "Plaza Alimentaria 9",
+                "ciudad": "GourmetCity",
+                "pais": "FoodLand",
+                "codigo_postal": "33445"
+            },
+            "telefono": "+34876543210",
+            "correo_electronico": "ventas@foodcoglobal.com",
+            "pagina_web": "https://www.foodcoglobal.com",
+            "contacto_principal": {
+                "nombre": "Alberto Pérez",
+                "cargo": "Jefe de Ventas",
+                "telefono": "+34-91-345-6789",
+                "correo_electronico": "alberto.perez@foodcoglobal.com"
+            }
+        },
+        "garantia": {
+            "periodo": "1 año",
+            "cobertura": "Defectos de fabricación"
+        },
+        "certificaciones": [ "CE", "RoHS" ],
+        "estado": "Nuevo",
+        "disponibilidad": "Disponible"
+    },
+    {
+        "producto_id": "91823",
+        "nombre": "Cámara de Seguridad 4K",
+        "descripcion": "Cámara de seguridad con resolución 4K y visión nocturna.",
+        "codigo": "CS4K-2024",
+        "categoria": "Tecnología",
+        "marca": "SafeVision",
+        "modelo": "SecureView 4K",
+        "precio_unitario": 249.99,
+        "precio_con_impuesto": 302.49,
+        "moneda": "EUR",
+        "unidades_disponibles": 80,
+        "stock_minimo": 8,
+        "stock_maximo": 200,
+        "imagen": "https://www.ejemplo.com/imagenes/camara_seguridad_4k.jpg",
+        "peso": "1.5 kg",
+        "dimensiones": {
+            "alto": "10 cm",
+            "ancho": "20 cm",
+            "profundidad": "10 cm"
+        },
+        "color": "Blanco",
+        "material": "Plástico",
+        "fecha_lanzamiento": "2024-06-01",
+        "plazo_entrega": "5-7 días hábiles",
+        "metodo_envio": "Standard, Expreso",
+        "costo_envio": 8.00,
+        "proveedor": {
+            "proveedor_id": "86230",
+            "nombre_razon_social": "FashionTrends Inc.",
+            "nif_cif": "E22334455",
+            "direccion": {
+                "calle": "Avenida de la Moda 88",
+                "ciudad": "FashionCity",
+                "pais": "StyleLand",
+                "codigo_postal": "99887"
+            },
+            "telefono": "+34765432210",
+            "correo_electronico": "info@fashiontrends.com",
+            "pagina_web": "https://www.fashiontrends.com",
+            "contacto_principal": {
+                "nombre": "Carlos Ruiz",
+                "cargo": "Gerente de ventas",
+                "telefono": "+34-91-567-8901",
+                "correo_electronico": "carlos.ruiz@fashiontrends.com"
+            }
+        },
+        "garantia": {
+            "periodo": "2 años",
+            "cobertura": "Defectos de fabricación"
+        },
+        "certificaciones": [ "CE", "RoHS" ],
+        "estado": "Nuevo",
+        "disponibilidad": "Disponible"
+    }
+]

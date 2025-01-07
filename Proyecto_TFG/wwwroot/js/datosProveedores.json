@@ -1,0 +1,210 @@
+[
+    {
+        "proveedor_id": "67890",
+        "nombre_razon_social": "ElectroSupply Inc.",
+        "nif_cif": "A12345678",
+        "direccion": {
+            "calle": "Calle del Proveedor 123",
+            "ciudad": "CiudadEjemplo",
+            "pais": "PaísEjemplo",
+            "codigo_postal": "12345"
+        },
+        "telefono": "+1-800-123-4567",
+        "correo_electronico": "ventas@electrosupply.com",
+        "pagina_web": "https://www.electrosupply.com",
+        "contacto_principal": {
+            "nombre": "Juan Pérez",
+            "cargo": "Director de ventas",
+            "telefono": "+1-800-765-4321",
+            "correo_electronico": "juan.perez@electrosupply.com"
+        }
+    },
+    {
+        "proveedor_id": "56788",
+        "nombre_razon_social": "ElectroCompany Inc.",
+        "nif_cif": "B87654321",
+        "direccion": {
+            "calle": "Calle del Proveedor 567",
+            "ciudad": "CiudadEjemplo2",
+            "pais": "PaísEjemplo2",
+            "codigo_postal": "67890"
+        },
+        "telefono": "+34678098234",
+        "correo_electronico": "ventas@electrocompany.com",
+        "pagina_web": "https://www.electrocompany.com",
+        "contacto_principal": {
+            "cargo": "Director de ventas",
+            "correo_electronico": "diego.martin@electrocompany.com",
+            "nombre": "Diego Martin",
+            "telefono": "+1-800-795-5221"
+        }
+    },
+    {
+        "proveedor_id": "98432",
+        "nombre_razon_social": "TechNova Solutions",
+        "nif_cif": "A45678901",
+        "direccion": {
+            "calle": "Avenida Innovación 42",
+            "ciudad": "CiudadFutura",
+            "pais": "PaísTech",
+            "codigo_postal": "54321"
+        },
+        "telefono": "+34987654321",
+        "correo_electronico": "contacto@technova.com",
+        "pagina_web": "https://www.technova.com",
+        "contacto_principal": {
+            "cargo": "Gerente de Proyectos",
+            "correo_electronico": "luis.rojas@technova.com",
+            "nombre": "Luis Rojas",
+            "telefono": "+44-20-1234-5678"
+        }
+    },
+    {
+        "proveedor_id": "76123",
+        "nombre_razon_social": "GreenTech Supplies",
+        "nif_cif": "B12345678",
+        "direccion": {
+            "calle": "Calle Verde 23",
+            "ciudad": "EcoCity",
+            "pais": "GreenLand",
+            "codigo_postal": "11223"
+        },
+        "telefono": "+34911223344",
+        "correo_electronico": "info@greentechsupplies.com",
+        "pagina_web": "https://www.greentechsupplies.com",
+        "contacto_principal": {
+            "cargo": "Director Ejecutivo",
+            "correo_electronico": "maria.garcia@greentechsupplies.com",
+            "nombre": "María García",
+            "telefono": "+34-91-123-4567"
+        }
+    },
+
+    {
+        "proveedor_id": "34912",
+        "nombre_razon_social": "FoodCo Global",
+        "nif_cif": "C98765432",
+        "direccion": {
+            "calle": "Plaza Alimentaria 9",
+            "ciudad": "GourmetCity",
+            "pais": "FoodLand",
+            "codigo_postal": "33445"
+        },
+        "telefono": "+34876543210",
+        "correo_electronico": "ventas@foodcoglobal.com",
+        "pagina_web": "https://www.foodcoglobal.com",
+        "contacto_principal": {
+            "cargo": "Jefe de Ventas",
+            "correo_electronico": "alberto.perez@foodcoglobal.com",
+            "nombre": "Alberto Pérez",
+            "telefono": "+34-91-345-6789"
+        }
+    },
+
+    {
+        "proveedor_id": "24851",
+        "nombre_razon_social": "AutoParts World",
+        "nif_cif": "D11223344",
+        "direccion": {
+            "calle": "Carretera Industrial 77",
+            "ciudad": "AutoCity",
+            "pais": "MotorLand",
+            "codigo_postal": "55667"
+        },
+        "telefono": "+34765432198",
+        "correo_electronico": "support@autopartsworld.com",
+        "pagina_web": "https://www.autopartsworld.com",
+        "contacto_principal": {
+            "cargo": "Gerente de Compras",
+            "correo_electronico": "jose.lopez@autopartsworld.com",
+            "nombre": "José López",
+            "telefono": "+34-92-765-4321"
+        }
+    },
+
+    {
+        "proveedor_id": "86230",
+        "nombre_razon_social": "FashionTrends Inc.",
+        "nif_cif": "E22334455",
+        "direccion": {
+            "calle": "Avenida de la Moda 88",
+            "ciudad": "FashionCity",
+            "pais": "StyleLand",
+            "codigo_postal": "99887"
+        },
+        "telefono": "+34765432210",
+        "correo_electronico": "info@fashiontrends.com",
+        "pagina_web": "https://www.fashiontrends.com",
+        "contacto_principal": {
+            "cargo": "Marketing Manager",
+            "correo_electronico": "carla.morales@fashiontrends.com",
+            "nombre": "Carla Morales",
+            "telefono": "+34-91-567-8910"
+        }
+    },
+
+    {
+        "proveedor_id": "11243",
+        "nombre_razon_social": "SmartTech Innovations",
+        "nif_cif": "F34567890",
+        "direccion": {
+            "calle": "Calle de la Innovación 100",
+            "ciudad": "TechCity",
+            "pais": "InnovLand",
+            "codigo_postal": "22334"
+        },
+        "telefono": "+34987654321",
+        "correo_electronico": "contacto@smarttechinnovations.com",
+        "pagina_web": "https://www.smarttechinnovations.com",
+        "contacto_principal": {
+            "cargo": "Director de Desarrollo",
+            "correo_electronico": "roberto.gomez@smarttechinnovations.com",
+            "nombre": "Roberto Gómez",
+            "telefono": "+34-93-456-7890"
+        }
+    },
+
+    {
+        "proveedor_id": "92567",
+        "nombre_razon_social": "BuildPro Solutions",
+        "nif_cif": "G45678901",
+        "direccion": {
+            "calle": "Calle Constructor 56",
+            "ciudad": "BuildCity",
+            "pais": "ConstructLand",
+            "codigo_postal": "77665"
+        },
+        "telefono": "+34987656789",
+        "correo_electronico": "contact@buildprosolutions.com",
+        "pagina_web": "https://www.buildprosolutions.com",
+        "contacto_principal": {
+            "cargo": "Director de Proyectos",
+            "correo_electronico": "ana.sanchez@buildprosolutions.com",
+            "nombre": "Ana Sánchez",
+            "telefono": "+34-91-678-9012"
+        }
+    },
+
+    {
+        "proveedor_id": "45789",
+        "nombre_razon_social": "TechGears Ltd.",
+        "nif_cif": "H56789012",
+        "direccion": {
+            "calle": "Avenida de la Tecnología 30",
+            "ciudad": "TechTown",
+            "pais": "GadgetLand",
+            "codigo_postal": "66788"
+        },
+        "telefono": "+34988765432",
+        "correo_electronico": "support@techgears.com",
+        "pagina_web": "https://www.techgears.com",
+        "contacto_principal": {
+            "cargo": "Jefe de Innovación",
+            "correo_electronico": "raul.martinez@techgears.com",
+            "nombre": "Raúl Martínez",
+            "telefono": "+34-91-234-5678"
+        }
+    }
+
+
+]
