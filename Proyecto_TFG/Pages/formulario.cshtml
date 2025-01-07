@@ -70,7 +70,9 @@
             </div>
             <div class="col-md-6 mb-3">
                 <label>Provincia</label>
-                <input type="text" class="form-control" placeholder="Provincia">
+                 <select class="form-control select2" id="selectProvincias" style="width: 100%;">
+                    <option value="" disabled selected>Seleccione provincia</option>
+                </select>
             </div>
             <div class="col-md-6 mb-3">
                 <label>Municipio</label>
@@ -78,7 +80,7 @@
             </div>
             <div class="col-md-6 mb-3">
                 <label>País</label>
-                <input type="text" class="form-control" placeholder="País">
+                <input type="text" class="form-control" placeholder="Pais" value="España" readonly>
             </div>
             <div class="col-md-6 mb-3">
                 <label>Número de Teléfono</label>
@@ -96,6 +98,8 @@
                     <option value="transferencia">Transferencia Bancaria</option>
                     <option value="paypal">PayPal</option>
                     <option value="contra-reembolso">Contra Reembolso</option>
+                    <option value="bizum">Bizum</option>
+                    <option value="efectivo">Efectivo</option>                                       
                 </select>
             </div>
         </div>
@@ -131,7 +135,7 @@
         </div>
 
         <!-- Botón para enviar solicitud -->
-        <button type="button" class="btn btn-success mt-3">Enviar Solicitud</button>
+        <button type="button" class="btn btn-success mt-3" onclick="validarDatosEntrega()">Enviar Solicitud</button>
     </div>
 </body>
 
