@@ -380,3 +380,9 @@ background-color: #e8f0fe; /* Fondo azul */
 #tablaPedido input { 
     text-align: center; 
 }
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
